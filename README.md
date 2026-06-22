@@ -6,7 +6,7 @@ Simple report program for evaluating released transports
 
 
 ```text
-ZTRP_TRANSPORT_EVAL/                                  ABAP Package
+Z_TRANSPORT_EVAL/                                  ABAP Package
 │
 ├── 🔹 Dictionary/                                    DDIC objects (data elements, structures, tables)
 │   │
