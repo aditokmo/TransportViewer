@@ -20,6 +20,10 @@ Z_TRANSPORT_EVAL/                                  ABAP Package
 │   │   ├── ZTS_TRANSPORT                             Transport table single row output structure
 │   │   └── ZTS_SEL_PARAMS                            Selection screen structure for user input
 │   │
+│   ├── 🔹 Domains/
+│   │   ├── ZTE_DISP_STRAT                            Domain for Display Strategy
+│   │   └── ZTE_TR_TYPE                               Domain for Transport Type
+│   │
 │   └── 🔹 Table Types/
 │   |   └── ZTS_TRANSPORTS                            Transport Table Type structure
 |   |
