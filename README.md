@@ -18,9 +18,11 @@ Z_TRANSPORT_EVAL/                                  ABAP Package
 │   │
 │   ├── 🔹 Structures/
 │   │   ├── ZTS_TRANSPORT                             Transport table single row output structure
-│   │   ├── ZTS_SEL_PARAMS                            Selection screen structure for user input
-│   │   └── ZTS_TRANSPORTS                            Transport Table Type structure
+│   │   └── ZTS_SEL_PARAMS                            Selection screen structure for user input
 │   │
+│   └── 🔹 Table Types/
+│   |   └── ZTS_TRANSPORTS                            Transport Table Type structure
+|   |
 │   └── 🔹 Database Tables/
 │       └── ZTR_CONFIG                                Database table configuration
 │
