@@ -6,7 +6,7 @@ interface ZIF_TR_DATA
         IMPORTING
             is_sel_params TYPE zts_sel_params
         RETURNING
-            VALUE(rt_data) TYPE zts_transports
+            VALUE(rt_transports) TYPE zts_transports
         RAISING
             cx_sy_sql_error.
 
