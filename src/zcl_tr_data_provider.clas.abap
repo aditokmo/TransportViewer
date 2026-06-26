@@ -28,10 +28,8 @@ CLASS zcl_tr_data_provider IMPLEMENTATION.
         SELECT trkorr, as4user, as4date, as4time, korrdev
           FROM e070
           WHERE trstatus = 'R'
-            AND ( @is_sel_params-owner_low  = @space OR as4user >= @is_sel_params-owner_low )
-            AND ( @is_sel_params-owner_high = @space OR as4user <= @is_sel_params-owner_high )
-            AND ( @is_sel_params-type_low   = @space OR korrdev >= @is_sel_params-type_low )
-            AND ( @is_sel_params-type_high  = @space OR korrdev <= @is_sel_params-type_high )
+            AND ( @is_sel_params-owner_low = @space OR ( as4user >= @is_sel_params-owner_low AND as4user <= @is_sel_params-owner_high ) )
+            AND ( @is_sel_params-type_low  = @space OR ( korrdev >= @is_sel_params-type_low  AND korrdev <= @is_sel_params-type_high ) )
           INTO CORRESPONDING FIELDS OF TABLE @lt_e070.
 
         SORT lt_e070 BY as4date DESCENDING as4time DESCENDING.

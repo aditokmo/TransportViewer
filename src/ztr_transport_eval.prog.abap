@@ -77,6 +77,14 @@ START-OF-SELECTION.
 
   lo_controller = NEW zcl_tr_controller( ).
 
+  IF ls_sel_params-owner_low IS NOT INITIAL AND ls_sel_params-owner_high IS INITIAL.
+      ls_sel_params-owner_high = ls_sel_params-owner_low.
+  ENDIF.
+
+  IF ls_sel_params-type_low IS NOT INITIAL AND ls_sel_params-type_high IS INITIAL.
+    ls_sel_params-type_high = ls_sel_params-type_low.
+  ENDIF.
+
   lo_controller->run(
     is_sel_params    = ls_sel_params
     iv_disp_strategy = p_strat
